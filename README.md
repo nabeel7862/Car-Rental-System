@@ -1,10 +1,10 @@
 # Car_ Rental_ Booking_ System
 
-Car_ Rental_ Booking_ System
+              Car_ Rental_ Booking_ System
 •	Car booking system implemented in Python using object-oriented programming
 
 •	For understanding the basic idea of project, the structure of program application has been shown, this structure is only for reference purpose. There can be changes in the final code.
-Customers can
+                            Customers can
 •	See available cars
 •	Book cars on hourly purpose.
 •	Book cars on weekly purpose.
