@@ -84,7 +84,7 @@ class CarRental:
     
     def returnCar(self, request):
         """
-        1. Accept a rented bike from a customer
+        1. Accept a rented car from a customer
         2. Replensihes the inventory
         3. Return a bill
         """
