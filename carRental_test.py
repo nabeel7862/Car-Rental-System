@@ -37,9 +37,9 @@ class CarRentalTest(unittest.TestCase):
 
     def test_rentCarOnDailyBasis_for_zero_number_of_cars(self):
         shop = CarRental(10)
-        self.assertEqual(shop.rentBikeOnDailyBasis(0), None)
+        self.assertEqual(shop.rentCarOnDailyBasis(0), None)
 
-    def test_rentCarOnDailyBasis_for_valid_positive_number_of_bikes(self):
+    def test_rentCarOnDailyBasis_for_valid_positive_number_of_cars(self):
         shop = CarRental(10)
         hour = datetime.now().hour
         self.assertEqual(shop.rentCarOnDailyBasis(2).hour, hour)
@@ -54,11 +54,11 @@ class CarRentalTest(unittest.TestCase):
         shop = CarRental(10)
         self.assertEqual(shop.rentCarOnWeeklyBasis(-1), None)
 
-    def test_rentBikeOnWeeklyBasis_for_zero_number_of_bikes(self):
-        shop = BikeRental(10)
-        self.assertEqual(shop.rentBikeOnWeeklyBasis(0), None)
+    def test_rentCarOnWeeklyBasis_for_zero_number_of_cars(self):
+        shop = CarRental(10)
+        self.assertEqual(shop.rentCarOnWeeklyBasis(0), None)
 
-    def test_rentCarOnWeeklyBasis_for_valid_positive_number_of_bikes(self):
+    def test_rentCarOnWeeklyBasis_for_valid_positive_number_of_cars(self):
         shop = CarRental(10)
         hour = datetime.now().hour
         self.assertEqual(shop.rentCarOnWeeklyBasis(2).hour, hour)
@@ -95,7 +95,7 @@ class CarRentalTest(unittest.TestCase):
         request = customer.returnCar()
         self.assertEqual(shop.returnCar(request), 0)
 
-    def test_returnCar_for_invalid_numOfBikes(self):
+    def test_returnCar_for_invalid_numOfCars(self):
      
         # create a shop and a customer
         shop = CarRental(10)
